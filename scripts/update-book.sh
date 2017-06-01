@@ -1,7 +1,8 @@
-curl --include --request PATCH http://localhost:4741/books/$ID \
+curl --include --request PATCH http://localhost:4741/books/5 \
   --header "Content-Type: application/json" \
   --data '{
 	"book": {
-		"author": "UPDATE"
+    "title": "Example Title",
+    "author": "Example Author"
 	}
 }'
